@@ -1,0 +1,174 @@
+/*Exercice 1*/
+/* 1. Sélectionner uniquement les paragraphes avec la classe "texte" */
+p.texte{
+    color: blue;
+}
+/* 2. Sélectionner tous les éléments avec la classe "texte" */
+.texte{
+    font-weight: bold;
+}
+/* 3. Sélectionner le titre principal */
+#titre-principal {
+    font-size: 24px;
+}
+/*Exercice 2*/
+/* Créer une ligne de boxes centrées horizontalement */
+.flex-container {
+    display: flex;                /* Active Flexbox */
+    justify-content: center;      /* Centre horizontalement */
+    gap: 10px;                   /* Espace entre les éléments */
+}
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: #3498db;
+    display: flex;               /* Nested flexbox */
+    justify-content: center;     /* Centre le numéro */
+    align-items: center;         /* Centre verticalement */
+    color: white;
+}
+/*Exercice 3*/
+/* Créer une grille responsive de 2x2 qui devient 1x4 sur mobile */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 2 colonnes par défaut */
+    gap: 10px;
+}
+.grid-item {
+    background-color: #2ecc71;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+/* Responsive: une seule colonne sur mobile */
+@media (max-width: 768px){
+    .grid-container {
+        grid-template-columns: 1fr;  /* 1 colonne sur mobile */
+    }
+}
+/*Exercice 4*/
+/* Créer une carte avec des marges et du padding */
+.card {
+    width: 200px;                    /* Largeur fixe */
+    padding: 20px;                   /* Espace intérieur */
+    margin: 20px auto;               /* Centre horizontalement */
+    border: 1px solid #ddd;          /* Bordure fine */
+    border-radius: 8px;              /* Coins arrondis */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* Ombre légère */
+}
+
+/*Exercice 5*/
+/* Créer un bouton avec effet de survol animé */
+.btn-anime {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;    /* Animation douce */
+}
+.btn-anime:hover {
+    transform: scale(1.1);        /* Agrandit au survol */
+    background-color: #b93a29;    /* Couleur plus foncée */
+}
+/*Exercice 6*/
+/* Créer un thème cohérent avec des variables CSS */
+:root{
+    --couleur-primaire: #34db45;
+    --couleur-texte: #333;
+    --espacement: 16px;
+}
+
+.theme-container {
+    color: var(--couleur-texte);
+    padding: var(--espacement);
+}
+.theme-container h2 {
+    color: var(--couleur-primaire);
+    margin-bottom: var(--espacement);
+}
+.theme-container button {
+    background-color: var(--couleur-primaire);
+    padding: calc(var(--espacement) / 2);
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+/*Exercice 7*/
+/* Créer une navigation qui s'adapte au mobile */
+.nav-responsive {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fa15c1;
+}
+/* Sur mobile: menu vertical */
+@media (max-width: 600px) {
+    .nav-responsive {
+        flex-direction: column;     /* Empile verticalement */
+        align-items: center;        /* Centre les liens */
+    }
+}
+
+/*Exercice 8*/
+/* Créer une carte qui se retourne au survol */
+.card-flip {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    perspective: 1000px;         /* Effet 3D */
+}
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;  /* Cache la face arrière */
+    transition: transform 0.6s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3498db;
+    color: white;
+}
+.card-back {
+    background-color: #2ecc71;
+    transform: rotateY(180deg);   /* Face arrière retournée */
+}
+.card-flip:hover .card-front {
+    transform: rotateY(180deg);   /* Retourne la face avant */
+}
+.card-flip:hover .card-back {
+    transform: rotateY(360deg);   /* Montre la face arrière */
+}
+
+/*Exercice 9*/
+
+/* Créer un modal avec fond flouté */
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 2;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);    /* Flou sur l'arrière-plan */
+    z-index: 1;
+}

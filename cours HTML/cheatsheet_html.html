@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description de la page">
+    <meta name="keywords" content="mot-clé1, mot-clé2">
+    <meta name="author" content="Auteur">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="mapage.css">
+    <title>Ma première page HTML</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li>Préstation</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="presentation"></section>
+        <section id="cv"></section>
+        <section id="skills"></section>
+
+        <!--Titres-->
+        <h1 style="color:red;">Mon Titre</h1>
+        <h2>Mon Titre</h2>
+        <h3>Mon Titre</h3>
+        <h4>Mon Titre</h4>
+        <h5>Mon Titre</h5>
+        <h6>Mon Titre</h6>
+
+        <!--Les Textes-->
+        <p class="mon_texte">Mon premier paragraphe</p>
+        <strong class="mon_texte">Texte important</strong>
+        <em>Texte emphatique</em>
+        <mark>Text surligné</mark>
+        <blockquote>Citation</blockquote>
+        <pre>Texte préformaté</pre>
+        <code>Code informatique</code>
+
+        <!--Medias et les liens-->
+        <a href="url"></a> <!--Lien Hypertext-->
+        <img src="image.jpg" alt="image eglise"><!--Image-->
+        <video src="video.mp4"></video><!--Video-->
+        <audio src="audio.mp3"></audio><!--Audio-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.3652959034803!2d2.3141035767285687!3d48.8703123998671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fce8ca6e347%3A0x2e38f4467a582f22!2sLe%20Palais%20de%20L&#39;%C3%89lys%C3%A9e!5e0!3m2!1sfr!2sfr!4v1736847305083!5m2!1sfr!2sfr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><!--Carte ou contenu embarqué-->
+
+        <!--Les listes-->
+        <ul>
+            <li>Liste non ordonnée</li>
+            <li>Liste non ordonnée</li>
+            <li>Liste non ordonnée</li>
+        </ul>
+        
+        <ol>
+            <li>Liste ordonnée</li>
+            <li>Liste ordonnée</li>
+            <li>Liste ordonnée</li>
+        </ol>
+        
+        <dl>
+            <dt>Terme</dt>
+            <dd>Définition</dd>
+            <dt>Terme</dt>
+            <dd>Définition</dd>
+            <dt>Terme</dt>
+            <dd>Définition</dd>
+        </dl>
+
+        <!---Les Formulaires-->
+        <form action="" method="post">
+            <label for="Name" aria-label="" role="">Nom</label>
+            <input type="text" id="nom" name="nom" required></input>
+
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Mot de passe">
+            <input type="number" min="0" max="100">
+            <input type="date">
+            <input type="file">
+            <input type="checkbox">
+            <input type="radio">
+            
+            <select>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+            
+            <textarea rows="4" cols="50"></textarea>
+            
+            <button type="submit">Envoyer</button>
+        
+        </form>
+        <!--Les Tableaux-->
+        <table>
+            <thead>
+                <tr>
+                    <th>En tête</th>
+                    <th>En tête</th>
+                    <th>En tête</th>
+                    <th>En tête</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cellule</td>
+                </tr>
+                <tr>
+                    <td>Cellule</td>
+                </tr>
+                <tr>
+                    <td>Cellule</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>

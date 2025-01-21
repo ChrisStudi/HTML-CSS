@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours CSS</title>
+</head>
+<body>
+    # CSS 3 Cheatsheet
+    ## Sélecteurs
+
+### Théorie
+```css
+.classe          /* Sélectionne par classe */
+#id              /* Sélectionne par ID */
+element          /* Sélectionne par type d'élément */
+element.classe   /* Élément avec une classe spécifique */
+element#id       /* Élément avec un ID spécifique */
+*                /* Sélecteur universel */
+
+## Flexbox
+
+### Théorie
+display: flex;
+flex-direction: row | column | row-reverse | column-reverse;
+justify-content: flex-start | flex-end | center | space-between | space-around;
+align-items: flex-start | flex-end | center | baseline | stretch;
+flex-wrap: nowrap | wrap | wrap-reverse;
+flex: 1;         /* grow | shrink | basis */
+
+## Grid
+
+### Théorie
+```css
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 20px;
+
+## Box Model
+
+### Théorie
+```css
+margin: 10px;
+padding: 10px;
+border: 1px solid black;
+```
+
+## Box Model
+
+### Théorie
+```css
+margin: 10px;
+padding: 10px;
+border: 1px solid black;
+
+## Animations
+
+### Théorie
+```css
+@keyframes nomAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+## Variables CSS
+
+### Théorie
+```css
+:root {
+    --couleur-principale: #007bff;
+}
+
+## Media Queries
+
+### Théorie
+```css
+@media screen and (max-width: 768px) {
+    /* Styles mobile */
+}
+
+## Transformations
+
+### Théorie
+```css
+transform: rotate(45deg);
+transform: scale(1.5);
+
+## Effets
+
+### Théorie
+```css
+box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+filter: blur(5px);
+    
+</body>
+</html>

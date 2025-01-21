@@ -1,0 +1,22 @@
+.mon_texte{
+    color: blueviolet;
+    font-size: 48px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#presentation{
+    background-color: blue;
+    height: 300px;
+    width: 100%;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+h1{
+    color: blue;
+}
+p{
+    color: crimson;
+}
