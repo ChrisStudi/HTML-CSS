@@ -4,6 +4,11 @@
     list-style: none;
     text-decoration: none;
 }
+main{
+    max-width: 1200px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
 
 header{
     width: 100%;
@@ -17,6 +22,9 @@ h3{
     text-align: center;
     font-family: 18px;
     color: #296df6;
+}
+section{
+    margin-top: 5%;
 }
 #about_me{
     text-align: center;
@@ -36,7 +44,7 @@ h1{
 }
 nav{
     width: 100%;
-    background-color: #fff;
+    background-color:transparent;
     position: fixed;
 }
 .menu{
@@ -45,8 +53,8 @@ nav{
     align-items: center;
 }
 .menu li a{
-    color: #296df6;
-    font-size: 1.5rem;
+    color: #ffffff;
+    font-size: 2rem;
 }
 .menu li a:hover{
     color:gold
@@ -66,32 +74,58 @@ nav{
 .section_title{
     width: 100%;
 }
-.emploi{
+.emploi1, .emploi3{
+    border-right: 1px solid #296df6;
+}
+.emploi1, .emploi2, .emploi3, .emploi4{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 49%;
     margin-top: 5%;
 }
 #skills{
+    display: flex;
+    flex-wrap: wrap;
     background-color: #fff;
     height: auto;
+    width: 100%;
+}
+.section_title{
     width: 100%;
 }
 .langages{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin: auto;
+    background-color: #296df6;
 }
 figure{
     background-color: #ffffff;
-    width: 25%;
-    margin: auto 2%;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #000;
+    margin: 1% 2%;
+}
+figure img{
+    width: 35%;
 }
 footer{
     background-color: #296df6;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.reseau, .copyright, .mentions-legales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reseau a{
+    font-size: 2.2rem;
+    margin: 2%;
+    color: #fff;
 }
 
 
